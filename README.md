@@ -10,7 +10,11 @@ What I basically did is that I took the images and code of the visualization and
 
 # Machine learning 
 In this part we have done 2 things-
+
+
 1.I visualized the population demography of India for the years 2001 and 2011.
+
+
 2.I have predicted the population of india from the year 2011 to 2030.
 
 For the visualization part I used the matplotlib library,before this the data of the population demography of india of the year 2001 and 2011 were taken and cleaned.
