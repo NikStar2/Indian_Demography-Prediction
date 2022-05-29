@@ -5,7 +5,7 @@ Other than that we have also used basic machine learning libraries like mathplot
 
 The project is Divided into two halves-
 # 1.Machine Learning
-# .Web Development
+# 2.Web Development
 What I basically did is that I took the images and code of the visualization and predictions then posted them in a webpage with login and signup options.I am not gonna go in detail about the web part but we have used Tomcat server to run the server. All the files and image needed to run the website are uploaded.
 
 # Machine learning 
