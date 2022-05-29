@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body style="background-image: url(backk.jpg);background-size:  100%;">
+    <div class="box">
+       <a href="index.html"> <img src="demography.png" class="admin"></a>
+        <h3>Login</h3>
+
+        <form name="myform" method="POST" action="valid.php" onsubmit="return vfun()">
+            <p>Email Id</p>
+            <input type="text" name="email" placeholder="Enter Email ID">
+            <p>Password</p>
+            <input type="password"  name="pass" placeholder="Enter Password">
+
+            <div id="errorBox" style="color: red;"></div>
+            <input type="submit" name="submit1" value="Login">
+             <br><br>
+             <a href="register.html">Register for new account</a>
+
+             <br><br>
+             <a href="rpass1.php">Forget Password</a>
+
+        </form>
+    </div>
+
+</body>
+</html>
