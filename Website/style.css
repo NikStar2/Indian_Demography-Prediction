@@ -1,0 +1,484 @@
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    font-family: sans-serif;
+}
+
+.box{
+    background: black;
+    color:white;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform:translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 15px 35px;
+    opacity: 0.8;
+   }
+   body .box a:hover{
+       color: white;
+   }
+
+.admin{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -640px;
+    margin-top: -260px;
+}
+
+.ad{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+    margin-left: -640px;
+    margin-top: -200px;
+}
+
+
+h3{
+    border: none;
+    outline: none;
+    height: 30px;
+    color: cyan;
+    font-size:20px;
+    border-radius: 20px;
+    text-align: center;
+ 
+    
+    
+}
+
+p{
+    color:cyan;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+input[type="text"],input[type="password"]
+{
+     border: none;
+     border-bottom: 1px solid #fff;
+     background:transparent;
+     outline: none;
+     height: 40px;
+     color: grey;
+     font-size: 16px;
+}
+input[type="email"]
+{
+    border: none;
+     border-bottom: 1px solid #fff;
+     background:transparent;
+     outline: none;
+     height: 40px;
+     color:grey;
+     font-size: 16px;   
+}
+input[type="number"]
+{
+     border: none;
+     border-bottom: 1px solid #fff;
+     background:transparent;
+     outline: none;
+     height: 40px;
+     color:grey;
+     font-size: 16px;   
+}
+
+input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: cyan;
+    color:black;
+    font-size:18px;
+    border-radius: 20px;
+}
+
+input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #0097a7;
+}
+
+a{
+    text-decoration: none;
+    font-size: 16px;
+    line-height:20px;
+    color:cyan;
+    font-size: 100%;
+}
+
+a:hover{
+    color:white;
+}
+
+
+
+
+.nav ul{
+    list-style: none;
+    background: #0009;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.nav a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background:cyan;
+    transition: width .3s;
+}
+
+
+
+.nav a:hover::after{
+    width: 100%;
+    transition: width .3s;
+}
+
+#logo{
+    float: left;
+    width: 180px;
+    height: 180px;
+    margin-top: -50px;
+    margin-left: 10px;
+    opacity: 5.0;
+
+}
+
+.title{
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: .9;
+    
+
+}
+
+.align{
+    margin-left: 20px;
+    margin-top: 120px;
+}
+
+.abb{
+     
+    background-color: cyan;
+    text-decoration: none;
+    color: #fff;
+    font-size: 19px;
+    width: 90px;
+    height: 22px;
+    text-align: center;
+    border: none;
+    margin-left: 150px;
+    margin-top: -25px;
+    outline: none;
+    border-radius: 50px;
+}
+
+.abb:hover{
+    background: #0097a7;
+    cursor: pointer;
+}
+
+.news .newt h1{
+    margin-top: -225px;
+    margin-left: 59%;
+    color: cyan;
+    font-size: 26px;
+    letter-spacing: 0.5;
+    text-transform: uppercase;
+   
+
+}
+ .news .newt #newmail{
+     width: 200px;
+     margin-left: 59%;
+     background-color: white;
+     height: 30px;
+     border-radius: 20px;
+ }
+
+ .news .newt #sb{
+    width: 100px;
+    height: 30px;
+}
+
+.newt input[type="email"]{
+    color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.icon ul{
+    display: flex;
+    margin-top: 28px;
+    margin-left: 617px;
+    text-align: center;
+
+
+}
+
+.icon ul li{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    height: 14px;
+    width: 14px;
+    background: #171515;
+    border-radius: 100px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: .5s;
+
+}
+
+.icon ul li::before{
+    position: absolute;
+    content:  '';
+    top: 0;
+    left: 0;
+    background: #d35400;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0.9);
+
+}
+
+.icon ul li:hover::before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    box-shadow: 0 0 15px #d35400;
+}
+
+.icon ul li:nth-child(1)::before{
+    background: #00008B;
+
+}
+
+.icon ul li:nth-child(2)::before{
+    background:#DD2A7B ;
+
+}
+
+.icon ul li:nth-child(3)::before{
+    background: cyan;
+
+}
+
+.icon ul li:nth-child(4)::before{
+    background: #2867B2;
+
+}
+
+
+.icon h2{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    background: #0009;
+    border-radius: 20px;
+    margin-top: 320px;
+    margin-left:635px;
+    width: 160px;
+    height: 35px;
+    letter-spacing: 0.5;
+    text-align: center;
+}
+
+.back{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.contact{
+    position: relative;
+    height: 86%;
+    padding: 50px 100px;
+    background-image: url(backk.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+}
+
+.contact .content{
+    max-width: 600px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contact .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.contact .content p{
+    font-weight: 300;
+    color:black;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+.container .continfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .continfo .bo{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .continfo .bo .icon{
+    width: 24px;
+    height: 24px;
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+
+.container .continfo .bo .text{
+    display: flex;
+    margin-left: 20px;
+    font-size:19px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.container .continfo .bo .text h3{
+    font-weight:500;
+    color:black;
+}
+
+.contform{
+    width:40%;
+    padding: 40px;
+    background: #fff;
+}
+
+.contform h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+
+
+
+.contform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contform .inputBox input,
+.contform .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none;
+}
+
+.contform .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    pointer-events: none;
+    color: black;
+}
+
+
+.contform .inputBox input:focus ~ span,
+.contform .inputBox input:valid ~ span,
+.contform .inputBox textarea:focus ~ span,
+.contform .inputBox textarea:valid ~ span{
+    color:red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+
+.contform .inputBox input[type="submit"]{
+    width: 100px;
+    background-color: cyan;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
+.contform .inputBox input[type="submit"]:hover{
+    background-color: skyblue;
+}

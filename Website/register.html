@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Registration </title>
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <script type="text/javascript" src="js.js"></script>
+</head>
+<body   style="background-image: url(backk.jpg);">
+    <div class="box">
+       
+        <h3>Register</h3>
+
+        <form name="myform2" action="servercon.php" method="post" onsubmit="return vfun1()">
+           <a href="index.html"> <img src="demography.png" class="ad"></a>
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username">
+            
+            <p>Email</p>
+            <input type="email" name="email" placeholder="Enter email id">
+            
+            <p>Password</p>
+            <input type="password"  name="upswd1" placeholder="Enter Password">
+            
+            <p>Retype Password</p>
+            <input type="password"  name="upswd2" placeholder="Re-Enter Password">
+
+            <p>Phone number</p>
+            <input type="number"  name="uph" placeholder="Enter Valid Number">
+            
+            <div id="errorBox" style="color: red;"></div>
+            <input type="submit" name="save" value="Register">
+             <br><br>
+            <a href="main.html">Existing user? Login!</a>
+            <br> <br>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header{
+    position: fixed;
+    background: #22242a;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    margin-top: -650px;
+}
+
+.leftarea h3{
+    font-family: "roboto",sans-serif;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.leftarea span{
+    color: cyan;
+}
+
+.logout{
+    padding: 5px;
+    background: cyan;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color:black;
+    transition: .5s;
+    transition-property: background;
+}
+
+.logout:hover{
+      cursor: pointer;
+      background: #0D9DBB;
+
+}
+
+.sidebar{
+    background-color: #2F323A;
+    margin-top: 166px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar .pro{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar h4{
+    color:#ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar a{
+    color: white;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition-property: background;
+}
+.sidebar i{
+    padding: 10px;
+}
+
+.sidebar a:hover{
+    background: cyan;
+}
+
+label #menu{
+    z-index: 1;
+    color: white;
+    position: fixed;
+    cursor: pointer;
+    left: 250px;
+    font-size: 20px;
+    margin: 5px 0;
+    transition: 0.5s;
+    transition-property: color;
+
+}
+
+label #menu:hover{
+    color:cyan;
+
+
+}
+
+#check:checked ~ .sidebar{
+    left: -190px;
+}
+
+#check:checked ~ .sidebar a span{
+    display: none;
+}
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+#check{
+    display: none;
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-top: -50px;
+}
+
+.con .box{
+    position: relative;
+    width: 280px;
+    padding:25px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,.1);
+    border-radius: 4px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.con .box::before
+{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rbga(255,255,255,.2);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.con .box .icon{
+    position: relative;
+    width: 80px;
+    height:80px;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 1s;
+
+}
+
+.con .box:nth-child(1) .icon{
+    box-shadow: 0 0 0 0 cyan;
+    background:  cyan;
+}
+.con .box:nth-child(1):hover .icon{
+    box-shadow: 0 0 0 400px cyan;
+}
+
+.con .box:nth-child(2) .icon{
+    box-shadow: 0 0 0 0 cyan;
+    background:   cyan;
+}
+
+.con .box:nth-child(2):hover .icon{
+    box-shadow: 0 0 0 400px   cyan;
+}
+
+.con .box:nth-child(3) .icon{
+    box-shadow: 0 0 0 0  cyan;
+    background:   cyan;
+    
+}
+
+.con .box:nth-child(3):hover .icon{
+    box-shadow: 0 0 0 400px  cyan;
+}
+
+.con .box .content{
+    position: relative;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+
+.con .box:hover .content{
+    color: #fff;
+}
+
+.con .box .content h3{
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.con .box .content p{
+    margin: 0;
+
+    padding: 0;
+    text-align: center;
+}
+
+.con .box .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    color:#000;
+    font-weight: 500;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+.con .box .content a:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.align{
+    display: block;
+}
+
+
+
+body .next {
+    cursor: pointer;
+    background: skyblue;
+}
+
+
+
+.align h1{
+    text-align: center;
+}
+body .header-para{
+    text-align:justify;
+    padding: 8px;
+}
+
+.align h3 {
+    font-size: 1.5rem;
+}
+
+body .box{
+    display: inline-block;
+    padding: 60px;
+}
+body .box p{
+    text-align: center;
+}
+
+body .box .image-controll {
+    height: 250px;
+    width: 450px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+body .box .image-controll:hover{
+    transform: scale(1.5);
+}
+
+.align .tt a:hover{
+    background: skyblue;
+
+}
+
+
+
+
